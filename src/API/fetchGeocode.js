@@ -2,13 +2,10 @@ import axios from 'axios';
 const APIKEY = process.env.REACT_APP_GEOCODE_KEY
 
 const addressToGeo = async (address) => {
-  const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${APIKEY}`);
   try{
+    const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${APIKEY}`);
     return response.data['results'][0].geometry.location;
-  }catch (e){
-    alert('This is not a city or a placE!!!!!!!!!!!')
-  }
-
+  }catch (e){}
 }
 
 export const geoToAddress = async (coordinates) => {

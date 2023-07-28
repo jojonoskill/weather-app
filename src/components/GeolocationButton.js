@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GeolocationButton = ({geolocation, setGeolocation}) => {
+const GeolocationButton = ({setGeolocation}) => {
 
   const getGeolocation = () => {
     if (navigator.geolocation) {
@@ -20,11 +20,6 @@ const GeolocationButton = ({geolocation, setGeolocation}) => {
   return (
       <div>
         <button onClick={getGeolocation}>Or just use geolocation</button>
-        {geolocation && (
-            <p>
-              Latitude: {geolocation.lat}, Longitude: {geolocation.lng}
-            </p>
-        )}
       </div>
   );
 };
