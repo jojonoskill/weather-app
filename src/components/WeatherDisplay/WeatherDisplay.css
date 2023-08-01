@@ -1,13 +1,11 @@
 .weather-box {
-    background-color: #393e46;
+    background-color: #61677A;
     border-radius: 12px;
     padding: 20px;
     height: 350px;
     width: 872px;
     margin: 20px auto;
-    color: #fff;
-    font-family: Arial, sans-serif;
-
+    color: #272829;
 }
 
 .weather-main-box {
@@ -33,21 +31,23 @@
 }
 
 .weather-location {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 .weather-date {
     font-size: 30px;
-    color: lightslategray;
+    color: #272829;
     margin-bottom: 15px;
+    opacity: 60%;
 }
 
 .weather-description {
     font-size: 20px;
-    color: lightslategray;
-    line-height: 1.0
+    color: #272829;
+    line-height: 1.0;
+    opacity: 60%;
 }
 
 .weather-temperature {
@@ -72,5 +72,4 @@
     width: 872px;
     font-size: 40px;
     margin-top: -20px;
-
 }

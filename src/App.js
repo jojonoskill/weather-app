@@ -1,10 +1,9 @@
-import './App.css';
 import {useEffect, useState} from 'react';
-import GeolocationButton from './components/GeolocationButton';
+import GeolocationButton from './components/GeolocationButton/GeolocationButton';
 import CitySearchForm from './components/CitySearchForm/CitySearchForm';
 import fetchWeather from './API/FetchWeather';
 import WeatherDisplay from './components/WeatherDisplay/WeatherDisplay';
-
+import './App.css'
 
 function App() {
   const [placelocation, setPlacelocation] = useState('');
@@ -27,15 +26,15 @@ function App() {
   }, [geolocation]);
 
   return (
-        <div className="App">
-          <h3>WeatherApp</h3>
-          {weather && (
-            <WeatherDisplay weather={weather}/>
-          )}
-          <CitySearchForm placelocation={placelocation} setPlacelocation={setPlacelocation} setGeolocation={setGeolocation}/>
-          <GeolocationButton geolocation={geolocation} setGeolocation={setGeolocation}/>
-        </div>
-    );
+      <div className="App">
+        <h3 className='header'>WeatherApp</h3>
+        {weather
+            ? <WeatherDisplay weather={weather}/>
+            :<div className='empty-square'/>}
+        <CitySearchForm placelocation={placelocation} setPlacelocation={setPlacelocation} setGeolocation={setGeolocation}/>
+        <GeolocationButton geolocation={geolocation} setGeolocation={setGeolocation}/>
+      </div>
+  );
 
 }
 

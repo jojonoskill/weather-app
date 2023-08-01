@@ -9,8 +9,6 @@
 
 .custom-field input {
     border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background: #f2f2f2;
     padding: var(--field-padding);

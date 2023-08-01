@@ -1,4 +1,5 @@
 import React from 'react';
+import './GeolocationButton.css'
 
 const GeolocationButton = ({setGeolocation}) => {
 
@@ -18,8 +19,8 @@ const GeolocationButton = ({setGeolocation}) => {
     }
   };
   return (
-      <div>
-        <button onClick={getGeolocation}>Or just use geolocation</button>
+      <div className='geolocation-button-box'>
+        <button className='geolocation-button' onClick={getGeolocation}>Or just use geolocation</button>
       </div>
   );
 };
