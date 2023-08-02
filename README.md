@@ -17,4 +17,6 @@ Small react-based weather app
 
 5. `npm start`
 
-
+![image](https://github.com/jojonoskill/weather-app/assets/87534952/f0f3be35-1466-4720-bd37-9460dc22bd1d)
+![image](https://github.com/jojonoskill/weather-app/assets/87534952/6f122abe-23f3-43cb-9fbb-7dce1ce4e253)
+![image](https://github.com/jojonoskill/weather-app/assets/87534952/e80032ab-044e-406b-a62d-35e66749b718)
