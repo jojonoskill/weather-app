@@ -12,16 +12,16 @@
     display: flex;
     margin-bottom: -50px;
     height: 300px;
+    flex-wrap: wrap;
+
 }
 
 
 
 .weather-temperature-box {
     text-align: center;
-    width: 220px;
-    height: 100px;
-    margin-top: 150px;
-    margin-left: 180px;
+    margin-top: 100px;
+    margin-left: auto;
 }
 
 .weather-icon {
@@ -63,6 +63,7 @@
     align-items: flex-start;
     line-height: 0;
     margin-top: 60px;
+    box-sizing: border-box;
 }
 
 
